@@ -5,7 +5,10 @@
     <TargetFramework>net6.0</TargetFramework>
     <LangVersion>preview</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- <ImplicitUsings>disable</ImplicitUsings> -->
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  <!-- <ItemGroup>
+    <Using Include="System" />
+  </ItemGroup> -->
 </Project>

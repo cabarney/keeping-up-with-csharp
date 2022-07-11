@@ -3,7 +3,7 @@ namespace Demo;
 
 public class Program7
 {
-    static async Task Main(string[] args)
+    static async Task Main7(string[] args)
     {
         string textInput = args?.FirstOrDefault() ?? throw new ArgumentException("No input provided");
         (string input, int number) = await ParseNumberAsync(textInput);
