@@ -88,7 +88,7 @@ public class Demo
 
     public static void PositionalPatterns(Dog dog)
     {
-        var foo = dog switch {
+        var message = dog switch {
             ("Corgi", "Baxter", _) => "Always young...",
             ("Corgi", _, <= 10) => "Active Corgi!",
             ("Corgi", _, > 10) => "Time to retire",
