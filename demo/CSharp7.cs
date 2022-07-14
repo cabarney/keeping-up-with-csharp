@@ -25,7 +25,16 @@ public class Program7
 
 public class CSharp7
 {
+    public int Number { get; set; }
+    public string Text { get; set; }
+
     public CSharp7() => Console.WriteLine("Hello, World!");
+
+    public void Deconstruct(out int Number, out int Text)
+    {
+        Number = this.Number;
+        Text = this.Text.Length;
+    }
 }
 
 #nullable restore
