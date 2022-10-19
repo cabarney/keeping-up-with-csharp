@@ -2,12 +2,16 @@
   "name": "dotnet 7.0 C-sharp demo",
   "build": {
     "dockerfile": "Dockerfile"
-},
-"customizations": {
-	"vscode": {
-		"extensions": [
-			"ms-dotnettools.csharp"
-		]
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"workbench.colorTheme": "Default Light+",
+				"editor.fontSize": 24
+			},
+			"extensions": [
+				"ms-dotnettools.csharp"
+			]
+		}
 	}
-}
 }

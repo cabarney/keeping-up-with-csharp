@@ -1,0 +1,35 @@
+  <ItemGroup>
+    <Using Include="System" />
+  </ItemGroup>
+
+==================
+
+var me = new Person();
+me.FirstName = "Adam";
+
+SayHello(me);
+
+static void SayHello(Person p)
+{
+  Console.WriteLine($"Hello {p.LastName.ToUpper()}, {p.FirstName} {p.MiddleName}");
+  Console.WriteLine($"{p.FirstName} has {p.Children.Count} children");
+}
+
+public class Person
+{
+  public Person() { }
+  public Person(string first, string last) : this(first, null, last) { }
+  public Person(string first, string middle, string last)
+  {
+    FirstName = first;
+    MiddleName = middle;
+    LastName = last;
+  }
+  public string FirstName { get; set; }
+  public string MiddleName { get; set; }
+  public string LastName { get; set; }
+  public List<Person> Children { get; set; }
+}
+
+================
+
